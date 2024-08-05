@@ -10,23 +10,8 @@ public class Main {
     }
 
     public static String[] codigoGenetico(String cod) {
-        Map<String, String> m = new HashMap<>();
-        m.put("UUU", "Phe");
-        m.put("UUC", "Phe");
-        m.put("UUA", "Leu");
-        m.put("UUG", "Leu");
-        m.put("UCU", "Ser");
-        m.put("UCC", "Ser");
-        m.put("UCA", "Ser");
-        m.put("UCG", "Ser");
-        m.put("UAU", "Tyr");
-        m.put("UAC", "Tyr");
-        m.put("UAA", "STOP");
-        m.put("UAG", "STOP");
-        m.put("UGA", "STOP");
-        m.put("UGU", "Cys");
-        m.put("UGC", "Cys");
-        m.put("UGG", "Trp");
+        HashMap<String, String> m;
+        m = introduceGen();
 
         List<String> protList = new ArrayList<>();
 
@@ -49,5 +34,27 @@ public class Main {
         for (String s : arr) {
             System.out.println(s);
         }
+    }
+
+    public static HashMap<String, String> introduceGen() {
+        Map<String, String> m = new HashMap<>();
+        m.put("UUU", "Phe");
+        m.put("UUC", "Phe");
+        m.put("UUA", "Leu");
+        m.put("UUG", "Leu");
+        m.put("UCU", "Ser");
+        m.put("UCC", "Ser");
+        m.put("UCA", "Ser");
+        m.put("UCG", "Ser");
+        m.put("UAU", "Tyr");
+        m.put("UAC", "Tyr");
+        m.put("UAA", "STOP");
+        m.put("UAG", "STOP");
+        m.put("UGA", "STOP");
+        m.put("UGU", "Cys");
+        m.put("UGC", "Cys");
+        m.put("UGG", "Trp");
+
+        return (HashMap) m;
     }
 }
