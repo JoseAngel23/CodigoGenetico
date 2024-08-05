@@ -54,6 +54,25 @@ public class Main {
         m.put("UGU", "Cys");
         m.put("UGC", "Cys");
         m.put("UGG", "Trp");
+        m.put("CUU", "Leu");
+        m.put("CUC", "Leu");
+        m.put("CUA", "Leu");
+        m.put("CUG", "Leu");
+        m.put("CCU", "Pro");
+        m.put("CCC", "Pro");
+        m.put("CCA", "Pro");
+        m.put("CCG", "Pro");
+        m.put("CAU", "His");
+        m.put("CAC", "His");
+        m.put("CAA", "Gln");
+        m.put("CAG", "Gln");
+        m.put("CGU", "Arg");
+        m.put("CGC", "Arg");
+        m.put("CGA", "Arg");
+        m.put("CGG", "Arg");
+
+
+
 
         return (HashMap) m;
     }
