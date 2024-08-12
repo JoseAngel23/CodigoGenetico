@@ -2,6 +2,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+        // Comentario para verificar el git reset --soft
         String cadenaARN = "UUUUUCUCCUAAUGAUGG";
         printArray(codigoGenetico(cadenaARN));
     }
