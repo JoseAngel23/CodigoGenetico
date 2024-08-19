@@ -2,12 +2,22 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Comentario para verificar el git reset --soft
-        String cadenaARN = "UUUUUCUCCUAAUGAUGG";
-        printArray(codigoGenetico(cadenaARN));
+        /*
+        Método principal donde se corren las funciones
+         */
+        System.out.print("Ingrese la cadena de ADN a traducir: ");
+        Scanner consola = new Scanner(System.in);
+        System.out.println();
+        String cadenaARN = consola.nextLine();
+        System.out.println(traduccionARN(cadenaARN));
+        printArray(codigoGenetico(traduccionARN(cadenaARN)));
     }
 
     public static String[] codigoGenetico(String cod) {
+        /*
+        Función que transforma una cadena de texto usando un HashMap
+        a Proteinas, recibe como argumento la función de tracucciónARN
+         */
         HashMap<String, String> m;
         m = introduceGen();
 
@@ -28,7 +38,36 @@ public class Main {
         return protList.toArray(new String[0]);
     }
 
+    public static String traduccionARN(String cod) {
+        /*
+        Función que permite traducir una secuencia de ADN a una de ARN
+         */
+        char[] codArray = cod.toCharArray();
+        StringBuilder newChain = new StringBuilder();
+        for (int i = 0; i < cod.length(); i++) {
+            switch (codArray[i]) {
+                case 'T':
+                    newChain.append('A');
+                    break;
+                case 'A':
+                    newChain.append('U');
+                    break;
+                case 'C':
+                    newChain.append('G');
+                    break;
+                case 'G':
+                    newChain.append('C');
+                    break;
+            }
+        }
+        return "ARN obtenido: " + newChain.toString();
+    }
+
     public static void printArray(String[] arr) {
+        /*
+        Función para imprimir las proteinas obtenidas del ARN
+         */
+        System.out.println("Proteinas obtenidas: ");
         for (String s : arr) {
             System.out.println(s);
         }
