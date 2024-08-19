@@ -60,7 +60,7 @@ public class Main {
                     break;
             }
         }
-        return "ARN obtenido: " + newChain.toString();
+        return newChain.toString();
     }
 
     public static void printArray(String[] arr) {
