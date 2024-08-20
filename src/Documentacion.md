@@ -5,3 +5,6 @@ especificamente una **Cadena de ADN** para llegar a las proteinas que conforman 
 Fue para la clase de BioInformatica en la universidad de Bogotá Jorge Tadeo Lozano.
 
 ## Dogma central de la bilogía
+El dogma central de la biología molecular describe la dirección unidireccional del flujo de información 
+genética, desde el ADN, pasando por el ARN, hasta llegar a la proteína. Este orden secuencial es fundamental 
+para la expresión génica y no puede ser invertido en condiciones normales.
