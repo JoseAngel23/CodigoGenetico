@@ -74,6 +74,9 @@ public class Main {
     }
 
     public static HashMap<String, String> introduceGen() {
+        /*
+        Función donde alimento el hashmap con información
+         */
         Map<String, String> m = new HashMap<>();
         m.put("UUU", "Phe");m.put("UUC", "Phe");m.put("UUA", "Leu");
         m.put("UUG", "Leu");m.put("UCU", "Ser");m.put("UCC", "Ser");
