@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         /*
         Método principal donde se corren las funciones
+        como printArray y traduccionARN
          */
         System.out.print("Ingrese la cadena de ADN a traducir: ");
         Scanner consola = new Scanner(System.in);
