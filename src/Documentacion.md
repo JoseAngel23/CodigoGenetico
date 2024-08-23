@@ -1,13 +1,14 @@
 # Instrucciones del código
 
-En el siguiente código se implementarón varias estructuras de datos con el fin de traducir una cadena de texto, 
-especificamente una **Cadena de ADN** para llegar a las proteinas que conforman a los seres vivos.
-Fue para la clase de BioInformatica en la universidad de Bogotá Jorge Tadeo Lozano.
+Para llevar a cabo la traducción de las cadenas de ADN, se implementó un algoritmo que utiliza una tabla hash 
+para almacenar el código genético. Esta estructura de datos permite acceder de manera eficiente a los codones y 
+sus correspondientes aminoácidos. El algoritmo recorre la cadena de ADN de tres en tres nucleótidos, buscando cada 
+codón en la tabla hash y concatenando los aminoácidos resultantes hasta encontrar un codón de stop. El código fue 
+desarrollado en Java.
 
 ## Dogma central de la bilogía
-El dogma central de la biología molecular describe la dirección unidireccional del flujo de información 
-genética, desde el ADN, pasando por el ARN, hasta llegar a la proteína. Este orden secuencial es fundamental 
-para la expresión génica y no puede ser invertido en condiciones normales.
+El dogma central de la biología molecular postula que la información genética se transmite en una dirección definida,
+desde el ADN al ARN y luego a la proteína. Esta secuencia es esencial para la expresión génica y, en general, no puede 
+ser invertida. Sin embargo, existen excepciones, como los retrovirus, que poseen la enzima transcriptasa inversa que 
+les permite convertir el ARN en ADN, desafiando así el dogma central.
 
-
-Lorem ipsum bla bla bla
