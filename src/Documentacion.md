@@ -12,3 +12,5 @@ desde el ADN al ARN y luego a la proteína. Esta secuencia es esencial para la e
 ser invertida. Sin embargo, existen excepciones, como los retrovirus, que poseen la enzima transcriptasa inversa que 
 les permite convertir el ARN en ADN, desafiando así el dogma central.
 
+### Metas en el proyecto
+Aún falta en este momento agregar las reversas e igualmente encontrar los complementos a cada cadena de ADN.
