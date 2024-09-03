@@ -9,9 +9,11 @@ public class Main {
         System.out.print("Ingrese la cadena de ADN a traducir: ");
         Scanner consola = new Scanner(System.in);
         System.out.println();
-        String cadenaARN = consola.nextLine();
-        System.out.println(traduccionARN(cadenaARN));
-        printArray(codigoGenetico(traduccionARN(cadenaARN)));
+        String cadenaADN = consola.nextLine();
+        reverseADN(cadenaADN);
+        System.out.println(traduccionARN(cadenaADN));
+        printArray(codigoGenetico(traduccionARN(cadenaADN)));
+
     }
 
     public static String[] codigoGenetico(String cod) {
@@ -62,6 +64,10 @@ public class Main {
             }
         }
         return newChain.toString();
+    }
+
+    public static String reverseADN(String adn) {
+        return new StringBuilder(adn).reverse().toString();
     }
 
     public static void printArray(String[] arr) {
